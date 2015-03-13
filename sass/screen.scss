@@ -1,0 +1,172 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass/layout/sticky-footer";
+
+@include sticky-footer(93px);
+
+@font-face {
+  font-family: "Benton-Sans";
+  font-style: normal;
+  font-weight: 100;
+  src: url("http://www.bu.edu/cdn/fonts/Benton-Sans-Light/1d3e1be9-e2ca-44c3-b674-7228a7c97407-2.eot?") format("embedded-opentype"), url("http://www.bu.edu/cdn/fonts/Benton-Sans-Light/1d3e1be9-e2ca-44c3-b674-7228a7c97407-3.woff") format("woff"), url("http://www.bu.edu/cdn/fonts/Benton-Sans-Light/1d3e1be9-e2ca-44c3-b674-7228a7c97407-1.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Benton-Sans";
+  font-style: normal;
+  font-weight: normal;
+  src: url("http://www.bu.edu/cdn/fonts/Benton-Sans-Regular/019c3a13-b3d7-4c5a-be27-07a8334a43e6-2.eot?") format("embedded-opentype"), url("http://www.bu.edu/cdn/fonts/Benton-Sans-Regular/019c3a13-b3d7-4c5a-be27-07a8334a43e6-3.woff") format("woff"), url("http://www.bu.edu/cdn/fonts/Benton-Sans-Regular/019c3a13-b3d7-4c5a-be27-07a8334a43e6-1.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Benton-Sans";
+  font-style: italic;
+  font-weight: normal;
+  src: url("http://www.bu.edu/cdn/fonts/Benton-Sans-Regular-Italic/3295fa07-2a3f-4cd1-ba86-e06161453a51-2.eot?") format("embedded-opentype"), url("http://www.bu.edu/cdn/fonts/Benton-Sans-Regular-Italic/3295fa07-2a3f-4cd1-ba86-e06161453a51-3.woff") format("woff"), url("http://www.bu.edu/cdn/fonts/Benton-Sans-Regular-Italic/3295fa07-2a3f-4cd1-ba86-e06161453a51-1.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Benton-Sans";
+  font-style: normal;
+  font-weight: bold;
+  src: url("http://www.bu.edu/cdn/fonts/Benton-Sans-Bold/d4a4a960-2cf2-430e-8b13-cbf6f261ddb9-2.eot?") format("embedded-opentype"), url("http://www.bu.edu/cdn/fonts/Benton-Sans-Bold/d4a4a960-2cf2-430e-8b13-cbf6f261ddb9-3.woff") format("woff"), url("http://www.bu.edu/cdn/fonts/Benton-Sans-Bold/d4a4a960-2cf2-430e-8b13-cbf6f261ddb9-1.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Benton-Sans";
+  font-style: italic;
+  font-weight: bold;
+  src: url("http://www.bu.edu/cdn/fonts/Benton-Sans-Bold-Italic/f037bfb1-69d7-4441-8d43-3b8c2c6e77d3-2.eot?") format("embedded-opentype"), url("http://www.bu.edu/cdn/fonts/Benton-Sans-Bold-Italic/f037bfb1-69d7-4441-8d43-3b8c2c6e77d3-3.woff") format("woff"), url("http://www.bu.edu/cdn/fonts/Benton-Sans-Bold-Italic/f037bfb1-69d7-4441-8d43-3b8c2c6e77d3-1.ttf") format("truetype");
+}
+
+body, p {
+  font-family: "Benton-Sans",Helvetica,arial,sans-serif;
+  font-weight: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #333;
+  font-size: 14px;
+  line-height: 1.42857;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.container {
+  width: 1174px;
+  padding: 0;
+}
+
+header {
+  background-color: #474544;
+  min-height: 138px;
+  margin-bottom: 10px;
+
+  h1, h2, h3 {
+    color: #FFFFFF;
+  }
+
+  h1 {
+    font-size: 22px;
+    padding-top: 92px;
+    float: left;
+    display: block;
+    margin-right: 67px;
+    line-height: 22px;
+  }
+
+  h2 {
+    font-weight: normal;
+    font-size: 32px;
+    padding-top: 60px;
+    display: block;
+    line-height: 32px;
+    margin-bottom: 2px;
+  }
+}
+
+main {
+  margin-bottom: 10px;
+
+  & > div {
+    background: #f6f5f3;
+    float: right;
+    width: 797px;
+    padding: 30px;
+  }
+
+  nav {
+    float : left;
+    width: 357px;
+    background-color: #e1f4fe;
+    padding: 54px 33px 230px 33px;
+    margin-right: 20px;
+    position: relative;
+
+    & > ul {
+      color: #01b2d0;
+      font-weight: bold;
+
+      & > li {
+        line-height: 35px;
+        background: url("../images/bg_plus.png") no-repeat 265px 11px;
+        text-indent: 20px;
+
+        a {
+          display: block;
+          outline: none;
+          &:active, &:focus, &:hover {
+            outline: none;
+            text-decoration: none;
+          }
+        }
+
+        &.open {
+          background: url("../images/bg_minus.png") no-repeat 265px 16px;
+        }
+
+        ul {
+          border-top: 1px solid #c7dbe5;
+          border-bottom: 1px solid #c7dbe5;
+          font-weight: normal;
+          padding-left: 20px;
+          background: #d2effe;
+
+          li {
+            text-indent: 0;
+            border: none;
+            line-height: 24px;
+            display: block;
+            background: url("../images/bg_menuitem.png") no-repeat left 7px;
+            padding-left: 12px;
+
+            a {
+              outline: none;
+              color: #474544;
+              text-decoration: none;
+              &:active, &:focus, &:hover {
+                outline: none;
+                text-decoration: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  background: #d2d1d1;
+
+  .container {
+    padding: 16px 32px;
+  }
+}
+

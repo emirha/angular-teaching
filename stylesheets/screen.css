@@ -1,0 +1,264 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 10, ../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/layout/_sticky-footer.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 12, ../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/layout/_sticky-footer.scss */
+#root {
+  clear: both;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin-bottom: -93px;
+}
+/* line 18, ../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/layout/_sticky-footer.scss */
+#root #root_footer {
+  height: 93px;
+}
+
+/* line 20, ../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/layout/_sticky-footer.scss */
+#footer {
+  clear: both;
+  position: relative;
+  height: 93px;
+}
+
+@font-face {
+  font-family: "Benton-Sans";
+  font-style: normal;
+  font-weight: 100;
+  src: url("http://www.bu.edu/cdn/fonts/Benton-Sans-Light/1d3e1be9-e2ca-44c3-b674-7228a7c97407-2.eot?") format("embedded-opentype"), url("http://www.bu.edu/cdn/fonts/Benton-Sans-Light/1d3e1be9-e2ca-44c3-b674-7228a7c97407-3.woff") format("woff"), url("http://www.bu.edu/cdn/fonts/Benton-Sans-Light/1d3e1be9-e2ca-44c3-b674-7228a7c97407-1.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Benton-Sans";
+  font-style: normal;
+  font-weight: normal;
+  src: url("http://www.bu.edu/cdn/fonts/Benton-Sans-Regular/019c3a13-b3d7-4c5a-be27-07a8334a43e6-2.eot?") format("embedded-opentype"), url("http://www.bu.edu/cdn/fonts/Benton-Sans-Regular/019c3a13-b3d7-4c5a-be27-07a8334a43e6-3.woff") format("woff"), url("http://www.bu.edu/cdn/fonts/Benton-Sans-Regular/019c3a13-b3d7-4c5a-be27-07a8334a43e6-1.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Benton-Sans";
+  font-style: italic;
+  font-weight: normal;
+  src: url("http://www.bu.edu/cdn/fonts/Benton-Sans-Regular-Italic/3295fa07-2a3f-4cd1-ba86-e06161453a51-2.eot?") format("embedded-opentype"), url("http://www.bu.edu/cdn/fonts/Benton-Sans-Regular-Italic/3295fa07-2a3f-4cd1-ba86-e06161453a51-3.woff") format("woff"), url("http://www.bu.edu/cdn/fonts/Benton-Sans-Regular-Italic/3295fa07-2a3f-4cd1-ba86-e06161453a51-1.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Benton-Sans";
+  font-style: normal;
+  font-weight: bold;
+  src: url("http://www.bu.edu/cdn/fonts/Benton-Sans-Bold/d4a4a960-2cf2-430e-8b13-cbf6f261ddb9-2.eot?") format("embedded-opentype"), url("http://www.bu.edu/cdn/fonts/Benton-Sans-Bold/d4a4a960-2cf2-430e-8b13-cbf6f261ddb9-3.woff") format("woff"), url("http://www.bu.edu/cdn/fonts/Benton-Sans-Bold/d4a4a960-2cf2-430e-8b13-cbf6f261ddb9-1.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Benton-Sans";
+  font-style: italic;
+  font-weight: bold;
+  src: url("http://www.bu.edu/cdn/fonts/Benton-Sans-Bold-Italic/f037bfb1-69d7-4441-8d43-3b8c2c6e77d3-2.eot?") format("embedded-opentype"), url("http://www.bu.edu/cdn/fonts/Benton-Sans-Bold-Italic/f037bfb1-69d7-4441-8d43-3b8c2c6e77d3-3.woff") format("woff"), url("http://www.bu.edu/cdn/fonts/Benton-Sans-Bold-Italic/f037bfb1-69d7-4441-8d43-3b8c2c6e77d3-1.ttf") format("truetype");
+}
+/* line 42, ../sass/screen.scss */
+body, p {
+  font-family: "Benton-Sans",Helvetica,arial,sans-serif;
+  font-weight: normal;
+}
+
+/* line 47, ../sass/screen.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 51, ../sass/screen.scss */
+body {
+  color: #333;
+  font-size: 14px;
+  line-height: 1.42857;
+}
+
+/* line 57, ../sass/screen.scss */
+strong {
+  font-weight: bold;
+}
+
+/* line 61, ../sass/screen.scss */
+.container {
+  width: 1174px;
+  padding: 0;
+}
+
+/* line 66, ../sass/screen.scss */
+header {
+  background-color: #474544;
+  min-height: 138px;
+  margin-bottom: 10px;
+}
+/* line 71, ../sass/screen.scss */
+header h1, header h2, header h3 {
+  color: #FFFFFF;
+}
+/* line 75, ../sass/screen.scss */
+header h1 {
+  font-size: 22px;
+  padding-top: 92px;
+  float: left;
+  display: block;
+  margin-right: 67px;
+  line-height: 22px;
+}
+/* line 84, ../sass/screen.scss */
+header h2 {
+  font-weight: normal;
+  font-size: 32px;
+  padding-top: 60px;
+  display: block;
+  line-height: 32px;
+  margin-bottom: 2px;
+}
+
+/* line 94, ../sass/screen.scss */
+main {
+  margin-bottom: 10px;
+}
+/* line 97, ../sass/screen.scss */
+main > div {
+  background: #f6f5f3;
+  float: right;
+  width: 797px;
+  padding: 30px;
+}
+/* line 104, ../sass/screen.scss */
+main nav {
+  float: left;
+  width: 357px;
+  background-color: #e1f4fe;
+  padding: 54px 33px 230px 33px;
+  margin-right: 20px;
+  position: relative;
+}
+/* line 112, ../sass/screen.scss */
+main nav > ul {
+  color: #01b2d0;
+  font-weight: bold;
+}
+/* line 116, ../sass/screen.scss */
+main nav > ul > li {
+  line-height: 35px;
+  background: url("../images/bg_plus.png") no-repeat 265px 11px;
+  text-indent: 20px;
+}
+/* line 121, ../sass/screen.scss */
+main nav > ul > li a {
+  display: block;
+  outline: none;
+}
+/* line 124, ../sass/screen.scss */
+main nav > ul > li a:active, main nav > ul > li a:focus, main nav > ul > li a:hover {
+  outline: none;
+  text-decoration: none;
+}
+/* line 130, ../sass/screen.scss */
+main nav > ul > li.open {
+  background: url("../images/bg_minus.png") no-repeat 265px 16px;
+}
+/* line 134, ../sass/screen.scss */
+main nav > ul > li ul {
+  border-top: 1px solid #c7dbe5;
+  border-bottom: 1px solid #c7dbe5;
+  font-weight: normal;
+  padding-left: 20px;
+  background: #d2effe;
+}
+/* line 141, ../sass/screen.scss */
+main nav > ul > li ul li {
+  text-indent: 0;
+  border: none;
+  line-height: 24px;
+  display: block;
+  background: url("../images/bg_menuitem.png") no-repeat left 7px;
+  padding-left: 12px;
+}
+/* line 149, ../sass/screen.scss */
+main nav > ul > li ul li a {
+  outline: none;
+  color: #474544;
+  text-decoration: none;
+}
+/* line 153, ../sass/screen.scss */
+main nav > ul > li ul li a:active, main nav > ul > li ul li a:focus, main nav > ul > li ul li a:hover {
+  outline: none;
+  text-decoration: none;
+}
+
+/* line 165, ../sass/screen.scss */
+footer {
+  background: #d2d1d1;
+}
+/* line 168, ../sass/screen.scss */
+footer .container {
+  padding: 16px 32px;
+}
